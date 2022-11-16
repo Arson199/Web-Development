@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .alert {
+       @apply bg-yellow-900 p-3 border-yellow-600 border-l-4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="p-4 bg-green-500 text-white mb-5">
+    <h1 class="text-lg font-semibold bg-gradient-to-r from-blue-600 to-red-600">Tailwind Css</h1>
+  </nav>
+  <div class="container m-auto">
+    <div class="bg-yellow-900 p-3 border-yellow-600 border-l-4">
+        This is an alert message.
+    </div>
+    <div class="alert">
+      This is an alert message.
+    </div>
+  </div>
+  
+  
+    <div class="prose">
+      <table>
+        <tr>
+          <th>Heading 1</th>
+          <th>Heading 2</th>
+          <th>Heading 3</th>
+          <th>Heading 4</th>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 1</td>
+          <td>Content 1</td>
+          <td>Content 1</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 1</td>
+          <td>Content 1</td>
+          <td>Content 1</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 1</td>
+          <td>Content 1</td>
+          <td>Content 1</td>
+        </tr>
+        </table>
+    </div>
+    <div class="flex">
+      <div class="border">
+        <div class="p-3">
+          <h5 class="text-lg font-semibold mb-2">Card Title</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus perferendis, aut, repellat placeat porro quae minus, eius sunt suscipit animi nemo doloremque aspernatur in officiis consequatur aperiam voluptatem eos.
+          </p>
+        </div>
+        <div class="bg-red-500 text-white p-3">
+          Card Footer
+        </div>
+      </div>
+      <div class="border">
+        <div class="p-3">
+          <h5 class="text-lg font-semibold mb-2">Card Title</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus perferendis, aut, repellat placeat porro quae minus, eius sunt suscipit animi nemo doloremque aspernatur in officiis consequatur aperiam voluptatem eos.
+          </p>
+        </div>
+        <div class="bg-blue-500 text-white p-3">
+          Card Footer
+        </div>
+      </div>
+      <div class="border">
+        <div class="p-3">
+          <h5 class="text-lg font-semibold mb-2">Card Title</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus perferendis, aut, repellat placeat porro quae minus, eius sunt suscipit animi nemo doloremque aspernatur in officiis consequatur aperiam voluptatem eos.
+          </p>
+        </div>
+        <div class="bg-purple-500 text-white p-3">
+          Card Footer
+        </div>
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-4">
+      <div class="border">
+        <div class="p-3">
+          <h5 class="text-lg font-semibold mb-2">Card Title</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus perferendis, aut, repellat placeat porro quae minus, eius sunt suscipit animi nemo doloremque aspernatur in officiis consequatur aperiam voluptatem eos.
+          </p>
+        </div>
+        <div class="bg-red-500 text-white p-3">
+          Card Footer
+        </div>
+      </div>
+      <div class="border">
+        <div class="p-3">
+          <h5 class="text-lg font-semibold mb-2">Card Title</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus perferendis, aut, repellat placeat porro quae minus, eius sunt suscipit animi nemo doloremque aspernatur in officiis consequatur aperiam voluptatem eos.
+          </p>
+        </div>
+        <div class="bg-blue-500 text-white p-3">
+          Card Footer
+        </div>
+      </div>
+      <div class="border">
+        <div class="p-3">
+          <h5 class="text-lg font-semibold mb-2">Card Title</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus perferendis, aut, repellat placeat porro quae minus, eius sunt suscipit animi nemo doloremque aspernatur in officiis consequatur aperiam voluptatem eos.
+          </p>
+        </div>
+        <div class="bg-purple-500 text-white p-3">
+          Card Footer
+        </div>
+      </div>
+    </div>
+
+    <div class="container m-auto">
+      <ul class="border rounded">
+        <li class="border-gray-300 border-b p-3 flex">
+          <button class="w-4 h-4 bg-green-500 hover:bg-black mr-3"></button>
+          <div class="flex-grow">Item One</div>
+          <button class="w-4 h-4 bg-red-500 mr-3 rounded-full"></button>
+        </li>
+        <li class="border-gray-300 border-b p-3">Item Two</li>
+        <li class="border-gray-300 border-b p-3">Item Three</li>
+      </ul>
+    </div>
+</body>
+</html>
