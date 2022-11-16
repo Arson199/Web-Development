@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		// Most used built-in methods and properties
+
+		//String
+		let textString = "Welcome from Myanmar";
+		textString.toUpperCase();
+		textString.toLowerCase();
+		textString.length;
+		textString.indexOf("z"); //-1
+
+		//Number
+		let num = "10";
+		let result = parseInt(num,10); //10
+		result < 10;
+
+		let num2 = 10;
+		num2.toString() // "10"
+
+		//Object
+		const customer = { name: "customer1",email:"customer1@gmail.com",gender:"Female"}
+		Object.keys(customer);
+		Object.values(customer);
+		customer.hasOwnProperty("age"); //false
+		customer.hasOwnProperty("name"); //true
+
+		//Array
+		const cities = ["Yangon","Mandalay","Myitkyina"];
+		cities.length; //3
+		cities[cities.length-1];//last element eg. "Myitkyina"
+		cities.push("Bagan"); //["Yangon,"Mandalay","Myitkyina","Bagan"]
+		cities.pop(); //remove the last element and return it. eg. "Bagan"
+		cities.indexOf("Yangon"); //0
+		cities.indexOf("Bago"); //-1
+		cities.slice(0,3); //["Yangon","Mandalay"]
+		cities.splice(0,2); //return the removed elements in a new array. eg. ["Yangon","Mandalay"]
+		cities.join(","); //"Yangon,Mandalay,Myitkyina"
+
+	</script>
+</html>

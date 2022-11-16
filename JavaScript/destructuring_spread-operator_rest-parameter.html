@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		// Destructuring,Spread Operator and Rest Parameter (ES6 Features)
+
+		// Object destructuring
+		const person = { name:"AKSM",age:20,gender:"Male",isNigga:false};
+		const n = person.name;
+		const a = person.age;
+		console.log(n,a);
+		//ES6
+		const {name,age,gender,isNigga} = person;
+		console.log(name,age,gender,isNigga);
+
+		// Array destructuring
+		const City = ["Yangon","Mandalay","NayPyiTaw"];
+		const CityOne = City[0];
+		const CityTwo = City[1];
+		console.log(CityOne);
+		//ES6
+		const[City1,City2,City3] = City;
+		console.log(City2);
+		const[CityA,,CityC] = City;
+		console.log(CityC);
+
+		let e = [123, 456];
+		let [c, d] = e;
+		console.log(c);
+
+		let ng = 3.14159
+		console.log(ng.toFixed(3)); // 3.142
+		
+		// Spread Operator (...)
+		// Object
+		const customer = { name:"Bo Bo",email:"bobo@gmail.com",gender:"Male"};
+		const copyCustomer1 = Object.assign({},customer);
+		console.log("First",copyCustomer1);
+		// ES6
+		const copyCustomer2 = {...customer};
+		console.log("Second",copyCustomer2);
+
+		//Array
+		const cities = ["Yangon","Inwa","Bagan"];
+		const newCitiesArray1 = [].concat(cities);
+		console.log("First",newCitiesArray1);
+		//ES6
+		const newCitiesArray2 = [...cities];
+		console.log("Second",newCitiesArray2);
+		const newCitiesArray3 = ["Bago",...cities];
+		const newCitiesArray4 = [...cities,"NayPyiTaw"];
+		console.log("Last",newCitiesArray3,newCitiesArray4);
+
+		let nums = [1, 2, 3]
+		let alphas = ['a', 'b', 'c']
+		let re = [ ...nums, ...alphas ];
+		console.log("Result",re);
+
+		let four = [ ...nums, 4 ] // [1, 2, 3, 4]
+		let zero = [ 0, ...nums ] // [0, 1, 2, 3]
+		console.log("Total: ",four," + " ,zero);
+
+		
+		//Rest parameter
+		const calculate = (...param) =>{
+			let total = 0;
+			for (let i = 0; i < param.length; i++) {
+				total += param[i];
+			}
+			return total;
+		}
+		console.log(calculate(2,3,40,5,8));
+	</script>
+</html>

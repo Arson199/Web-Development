@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<script>
+
+	//value returning function
+		function calculate(f1,f2,f3) {
+			let num = f1*f2*f3;
+				num += 4;
+				num /= 2;
+			return num;
+			console.log("Hello AKSM"); //can't work 
+		}
+		// const calculatedValue = calculate(6,2,4);
+		// console.log(calculatedValue);
+		console.log(calculate(6,2,4));
+
+		//built-in function
+		console.log(alert("Hello AKSM"));
+
+		//ES6 arrow function
+		const myArrowFunction = (param1,param2) => {
+				let param = param1 * param2
+			console.log(param);
+		}
+		myArrowFunction(2,3);
+	</script>
+</html>

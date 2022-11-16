@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add1000(){
+            let result = 0;
+            for (let i = 0; i <= 1000; i++) {
+                result +=i;
+            }
+            return result;
+        }
+    //     function add1000later(){
+    //     return new Promise( done => {
+    //         done(add1000())
+    //         })
+    //    }
+        function add1000later(){
+            return new Promise( (resolve,reject) => {
+                let result = add1000();
+                if(result) resolve(result)
+                else reject()
+            })
+        }
+       console.log("some processes");
+    //    add1000later().then(result => console.log(result));
+        add1000later().then(result => console.log(result)).catch( () => console.log("Error"));
+       console.log("more processes");
+    </script>
+</body>
+</html>
